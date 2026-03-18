@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №5</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <h1>Лабораторна робота №5</h1>
+    <h2>Тимчук Петро: ІПЗ-22, варіант 11</h2>
+
+    <div class="button-container" id="buttons"></div>
+
+    <script>
+        const container = document.getElementById('buttons');
+
+        for (let i = 1; i <= 3; i++) {
+            const link = document.createElement('a');
+            link.href = `pages/task_${i}.html`;
+            link.className = 'task-btn';
+            link.textContent = `Завдання ${i}`;
+
+            container.appendChild(link);
+        }
+    </script>
+
+</body>
+</html>
