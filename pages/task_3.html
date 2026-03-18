@@ -8,47 +8,47 @@
 </head>
 <body>
 
-<h1>Прозорість + градієнт</h1>
-<p class="task-description">Напишіть функцію showOpacity(), яка б приймала на вхід звичайний рядок, а повертала рядок, в якому прозорість букв змінювалася від 0 до 1 (за допомогою властивостей CSS; для роботи з окремими літерами використовуйте елемент span).</p>
+    <h1>Прозорість + градієнт</h1>
+    <p class="task-description">Напишіть функцію showOpacity(), яка б приймала на вхід звичайний рядок, а повертала рядок, в якому прозорість букв змінювалася від 0 до 1 (за допомогою властивостей CSS; для роботи з окремими літерами використовуйте елемент span).</p>
 
-<div class="form-container wide">
-    
-    <div class="input-group">
-        <label>Текст</label>
-        <input type="text" id="text" oninput="update()">
+    <div class="form-container wide">
+        
+        <div class="input-group">
+            <label>Текст</label>
+            <input type="text" id="text" oninput="update()">
+        </div>
+
+        <div class="input-group">
+            <label>Колір 1</label>
+            <input type="color" id="color1" value="#0284c7" onchange="update()">
+        </div>
+
+        <div class="input-group">
+            <label>Колір 2</label>
+            <input type="color" id="color2" value="#0369a1" onchange="update()">
+        </div>
+
+        <div class="input-group">
+            <label>Прозорість початку</label>
+            <input type="range" id="opacity1" min="0" max="1" step="0.1" value="0.2" onchange="update()">
+        </div>
+
+        <div class="input-group">
+            <label>Прозорість кінця</label>
+            <input type="range" id="opacity2" min="0" max="1" step="0.1" value="1" onchange="update()">
+        </div>
+
+        <div class="input-group">
+            <label>Зміщення центру</label>
+            <input type="range" id="centerShift" min="-1" max="1" step="0.1" value="0" onchange="update()">
+        </div>
+
+        <div id="result" style="margin-top:20px; min-height:80px; font-size:1.5rem;"></div>
+
     </div>
 
-    <div class="input-group">
-        <label>Колір 1</label>
-        <input type="color" id="color1" value="#0284c7" onchange="update()">
-    </div>
+    <a href="../index.html" class="back-link">← Назад</a>
 
-    <div class="input-group">
-        <label>Колір 2</label>
-        <input type="color" id="color2" value="#0369a1" onchange="update()">
-    </div>
-
-    <div class="input-group">
-        <label>Прозорість початку</label>
-        <input type="range" id="opacity1" min="0" max="1" step="0.1" value="0.2" onchange="update()">
-    </div>
-
-    <div class="input-group">
-        <label>Прозорість кінця</label>
-        <input type="range" id="opacity2" min="0" max="1" step="0.1" value="1" onchange="update()">
-    </div>
-
-    <div class="input-group">
-        <label>Зміщення центру</label>
-        <input type="range" id="centerShift" min="-1" max="1" step="0.1" value="0" onchange="update()">
-    </div>
-
-    <div id="result" style="margin-top:20px; min-height:80px; font-size:1.5rem;"></div>
-
-</div>
-
-<a href="../index.html" class="back-link">← Назад</a>
-
-<script src="../scripts/opacity.js"></script>
+    <script src="../scripts/opacity.js"></script>
 </body>
 </html>

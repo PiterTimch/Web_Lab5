@@ -8,20 +8,20 @@
 </head>
 <body>
 
-<h1>Перевірка дати</h1>
-<p class="task-description">Реалізувати за допомогою JavaScript перевірку формату дати: якщо ввести у текстове поле рядок, у якому неможливо впізнати дату, то поряд із текстовим полем з'являється текст, який інформує про помилку.</p>
+    <h1>Перевірка дати</h1>
+    <p class="task-description">Реалізувати за допомогою JavaScript перевірку формату дати: якщо ввести у текстове поле рядок, у якому неможливо впізнати дату, то поряд із текстовим полем з'являється текст, який інформує про помилку.</p>
 
-<div class="form-container">
-    <div class="input-group">
-        <label>Введіть дату</label>
-        <input type="text" id="dateInput" placeholder="ДД.ММ.РРРР">
+    <div class="form-container">
+        <div class="input-group">
+            <label>Введіть дату</label>
+            <input type="text" id="dateInput" placeholder="ДД.ММ.РРРР">
+        </div>
+
+        <div id="error" style="min-height: 110px;"></div>
     </div>
 
-    <div id="error" style="min-height: 110px;"></div>
-</div>
+    <a href="../index.html" class="back-link">← Назад</a>
 
-<a href="../index.html" class="back-link">← Назад</a>
-
-<script src="../scripts/dateCheck.js"></script>
+    <script src="../scripts/dateCheck.js"></script>
 </body>
 </html>
